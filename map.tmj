@@ -726,7 +726,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":21,
                  "id":78,
-                 "name":"closedDoor",
+                 "name":"closed_door",
                  "opacity":1,
                  "properties":[
                         {
@@ -764,7 +764,7 @@
                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                  "height":21,
                  "id":79,
-                 "name":"openedDoor",
+                 "name":"opened_door",
                  "opacity":1,
                  "type":"tilelayer",
                  "visible":false,
