@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="whisper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whisper</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Charm:wght@400;700&family=Cinzel+Decorative:wght@400;700&family=Nanum+Myeongjo:wght@800&family=Playball&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Encode+Sans:wght@100;200;300;400&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Rajdhani:wght@400;500&family=Spartan:wght@100;200;300;400&display=swap');
+        </style>
+</head>
+<body>
+
+  <div id="test">
+    <div class="barre" id="barre1"></div>
+    <div class="flex">
+    <div id="icone1"></div>
+    <div id="icone2"></div>
+    <div id="icone3"></div>
+    <div id="icone4"></div>
+    <div id="icone5"></div>
+    <div id="icone6"></div>
+    </div>
+    <div class="barre" id="barre1"></div>
+  </div>
+
+
+
+    <div class="skw-pages">
+        <div class="skw-page skw-page-1 active">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <div class="logowhisper"></div>
+                <div class="imgboite"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <p class="skw-page__description" id="moto">"Tel un murmur délicat, Whisper évoque la finesse des âromes sur les papilles."</p>
+                <div class="logovedrenne"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-2">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h3>UNE FABRICATION</h3>
+                <div class="content2">
+                  <div class="content__container2">
+                    <ul class="content__container__list2">
+                      <li class="content__container__list__item2">Tradition</li>
+                      <li class="content__container__list__item2">Richesse</li>
+                      <li class="content__container__list__item2">Approche Authentique</li>
+                    </ul>
+                  </div>
+                </div>
+                <p id="textfab">le rhum Whisper est fabriqué à partir de mélasse de canne à sucre de
+                  qualité supérieure.</p>
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-3">
+          <div class="skw-page__half skw-page__half--left ">
+            <div class="skw-page__skewed recadre">
+              <div class="skw-page__content"></div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h3>SON HISTOIRE</h3>
+                <div class="content">
+                  <div class="content__container">
+                    <ul class="content__container__list">
+                      <li class="content__container__list__item">Deux jeunes français</li>
+                      <li class="content__container__list__item">Authentique et traditionnel</li>
+                      <li class="content__container__list__item">Finesse des arômes</li>
+                    </ul>
+                  </div>
+                </div>
+                <p id="texthistory">Le rhum Whisper est le fruit du travail de deux jeunes français
+
+                  passionnés, leur but était de créer un rhum le plus authentique et traditionnel possible.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-4"> <!-- page MOJITO -->
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content"> <!-- ici ajouter texte immobile -->
+                <h4>WHISPER MOJITO HONEY</h4>
+                <div class="paragraph_mojito">
+                  <p>Ingrédients:</p>
+                  <p class="ingre">•5 cl Whisper Honey Punch 20% - 50cl</p>
+                  <p class="ingre">•4 quartiers de citron vert</p>
+                  <p class="ingre">•6 feuilles de menthe</p>
+                  <p class="ingre">•Eau gazeuse</p>
+                  <p id="method_padding">Méthode:</p>
+                  <p class="ingre">Piler les citrons et le rhum au fond d'un tumbler.
+                  Ajouter la menthe et piler à nouveau délicatement.
+                  Ajouter de la glace pilée et compléter avec de l'eau pétillante.
+                  Garnir d'un bouquet de menthe.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <div class="content">
+                  <div class="content__container"><!--  ici ajouter texte keyframes --></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-5">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h3>LA BARBADE</h3>
+                <div class="content1">
+                  <div class="content__container1">
+                    <h2 class="content__container__text1">
+                      LA BARBADE
+                    </h2>
+                    <ul class="content__container__list1">
+                      <li class="content__container__list__item1">Le soleil des Caraïbes</li>
+                      <li class="content__container__list__item1">Savoir faire ancestral</li>
+                    </ul>
+                  </div>
+                </div>
+                <p id="textbarbade">Forte d’un climat chaud et tropical, la Barbade est l’île la plus
+
+                  ensoleillée des Caraïbes, son histoire a été modelée par celle de la canne à sucre, lui
+
+                  laissant aujourd’hui tout le bénéfice d’un savoir-faire ancestral et
+
+                  d’une tradition sucrière et rhumière vieille de plus de 350 ans.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skw-page skw-page-6">
+          <div class="skw-page__half skw-page__half--left">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+                <h5>EDITION SPECIALE</h5>
+                <div class="content3">
+                  <div class="content__container3">
+                    <h2 class="content__container__text3">
+                      EDITION SPECIALE
+                    </h2>
+                    <ul class="content__container__list3">
+                      <li class="content__container__list__item3">Packaging limité</li>
+                      <li class="content__container__list__item3">Design exclusif</li>
+                    </ul>
+                  </div>
+                </div>
+                <span>Pour célébrer l'anniversaire de ce rhum d'exception, nous présentons une édition spéciale limitée contenant un flyer promotionnel, un packaging en bois et une bouteille avec un design unique.</span>
+                <div id="bouton">
+                  <button>Acheter</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skw-page__half skw-page__half--right">
+            <div class="skw-page__skewed">
+              <div class="skw-page__content">
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
