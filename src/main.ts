@@ -1,7 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { ActionMessage, ActionsMenuAction } from "@workadventure/iframe-api-typings";
-import { isModifyUIWebsiteEvent } from "@workadventure/iframe-api-typings/front/Api/Events/Ui/UIWebsiteEvent";
+/* import { ActionMessage, ActionsMenuAction } from "@workadventure/iframe-api-typings";
+import { isModifyUIWebsiteEvent } from "@workadventure/iframe-api-typings/front/Api/Events/Ui/UIWebsiteEvent"; */
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -11,13 +11,13 @@ let triggerMessage: any = undefined;
 let count: number = 0;
 let currentPopup: any = undefined;
 let helloWorldPopup: any = undefined;
-let mainPopup: any = undefined;
-let ascenseur_btn: any = undefined;
+/* let mainPopup: any = undefined;
+let ascenseur_btn: any = undefined; */
 let chatPopup: any = undefined; 
 let antibouf: number=0;
-let increment_mw: any = 0; 
+/* let increment_mw: any = 0;  */
 var myWebsite: any=undefined;
-var coWebsite: any;
+/* var coWebsite: any; */
 
 // Variable pour stocker le nombre d'increments
 let incrementCount: number = 0;
@@ -402,9 +402,9 @@ function handleScroll(event: WheelEvent) {
 
     // Ascenseur
 
-    WA.room.area.onEnter('ascenseur_zone').subscribe(() => {
+/*     WA.room.area.onEnter('ascenseur_zone').subscribe(() => {
         ascenseur_btn = WA.ui.openPopup("btn-overlay", "etage", []);
-    })
+    }) */
 
 
 
@@ -459,8 +459,8 @@ function closePopup(){
     }
 }
 
-export {};
+/* export {};
     function closeCoWebSite(myWebsite: any) {
         throw new Error("Function not implemented.");
     }
-
+ */
