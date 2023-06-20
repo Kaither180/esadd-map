@@ -1844,7 +1844,7 @@
                 {
                  "height":31.75,
                  "id":8,
-                 "name":"from-floor1",
+                 "name":"from_floor1",
                  "properties":[
                         {
                          "name":"start",
