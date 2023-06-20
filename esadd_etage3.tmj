@@ -1042,12 +1042,12 @@
                 {
                  "height":31.75,
                  "id":1,
-                 "name":"fromfloor2",
+                 "name":"from_floor1",
                  "properties":[
                         {
                          "name":"start",
-                         "type":"string",
-                         "value":"Start"
+                         "type":"bool",
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1217,6 +1217,23 @@
                  "width":96,
                  "x":992,
                  "y":716.25
+                }, 
+                {
+                 "height":32,
+                 "id":19,
+                 "name":"to_floor1",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"\/@\/esadd-team\/showcase\/etage1#from_floor2"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":64,
+                 "x":1056,
+                 "y":288
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3212,7 +3229,7 @@
          "y":0
         }],
  "nextlayerid":45,
- "nextobjectid":19,
+ "nextobjectid":20,
  "orientation":"orthogonal",
  "properties":[
         {
