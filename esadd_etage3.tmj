@@ -1010,7 +1010,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/affiche 2 - Copie.pdf"
+                         "value":"\/@\/src\/Ressource_affiche\/Tableau\/affiche 2 - Copie.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
