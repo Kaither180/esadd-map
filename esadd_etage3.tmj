@@ -1010,7 +1010,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"\/@\/src\/Ressource_affiche\/Tableau\/affiche 2 - Copie.pdf"
+                         "value":"https:\/\/kaither180.github.io\/src\/Ressource_affiche\/Tableau\/affiche 2 - Copie.png"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
