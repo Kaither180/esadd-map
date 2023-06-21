@@ -1763,7 +1763,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"\/src\/Ressource_affiche\/Tableau\/nintendo_fest_small.pdf"
+                         "value":"nintendo_fest_small.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1795,7 +1795,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Affiche_Black - Copie.pdf"
+                         "value":"Affiche_Black - Copie.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1877,7 +1877,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Affiche1 - Copie.pdf"
+                         "value":"Affiche1 - Copie.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1909,7 +1909,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Affiche op\u00e9ra dijon sans contours - Copie.pdf"
+                         "value":"Affiche op\u00e9ra dijon sans contours - Copie.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",

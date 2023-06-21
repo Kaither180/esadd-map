@@ -952,7 +952,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/ludi.pdf"
+                         "value":"ludi.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -984,7 +984,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Rajaud_Nathan_Affiche1.pdf"
+                         "value":"Rajaud_Nathan_Affiche1.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1016,7 +1016,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Manipulation_Mus\u00e9eBeauxArts_Dijon_RVB_2.pdf"
+                         "value":"Manipulation_Mus\u00e9eBeauxArts_Dijon_RVB_2.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1048,7 +1048,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/Slide 16_9 - 4 (1).pdf"
+                         "value":"Slide 16_9 - 4 (1).pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1080,7 +1080,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/MicrosoftTeams-image (138).pdf"
+                         "value":"MicrosoftTeams-image (138).pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
@@ -1112,7 +1112,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/Ressource_affiche\/Tableau\/B24_RAJAUD_Nathan_CYCLES_3240x5760.pdf"
+                         "value":"B24_RAJAUD_Nathan_CYCLES_3240x5760.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
