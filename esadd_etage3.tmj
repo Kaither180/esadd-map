@@ -1010,7 +1010,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"affiche6.pdf"
+                         "value":"\/public\/affiche6.pdf"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
