@@ -9,6 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: "./index.html",
+                pnj_chat: "./pnj_chat.html",
                 ...getMapsScripts(maps),
             },
         },
