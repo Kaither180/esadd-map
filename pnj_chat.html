@@ -5,9 +5,559 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PopupVhat PNJ</title>
-    
+<!--     <link rel="stylesheet" href="./pnj_chatstyle.css"> -->
     <link rel="stylesheet" href="https://use.typekit.net/jtb6vkp.css">
-  <link rel="stylesheet" href="./assets/pnj_chat-31d64182.css">
+    <style>
+        
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+   /*  border: solid red 1px; */
+    box-sizing: border-box;
+}
+.main-cont{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 249, 239);
+    
+}
+.interface{
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 80vw;
+    height: 70vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+h1{
+font-family: "futura-pt", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 35px;
+height: 6%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.question-container{
+    display: grid;
+    height: 80%;
+    justify-content: center;
+    align-content: space-around;
+    grid-template-columns:90% ;
+    grid-template-rows: 5vh 5vh 5vh 5vh 5vh 5vh; 
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.question{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(127, 127, 127, 0.365);
+}
+.q-container{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: solid 1.5px black;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all 200ms ease-in-out;
+    background-color: white
+}
+.question:hover .q-container{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.card0{
+    display: none;
+    width: 80vw;
+    height: 55vh;
+    border-radius: 25px;
+}
+.card1{
+    display: none;
+    width: 80vw;
+    height: 55vh;
+    border-radius: 25px;
+}
+.card2{
+    display: none;
+    width: 80vw;
+    height: 60vh;
+    border-radius: 25px;
+}
+.card3{
+    display: none;
+    width: 80vw;
+    height: 65vh;
+    border-radius: 25px;
+}
+.card4{
+    display: none;
+    width: 80vw;
+    height: 65vh;
+    border-radius: 25px;
+}
+.card5{
+    display: none;
+    width: 80vw;
+    height: 65vh;
+    border-radius: 25px;
+}
+.question1{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.question1 h1{
+    height: 5vh;
+    width: 90%;
+    text-align: center;
+}
+.question2{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 100%;
+    height: 55vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.question2 h1{
+    height: 5vh;
+    width: 90%;
+    text-align: center;
+}
+.question3{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.question3 h1{
+    height: 5vh;
+    width: 90%;
+    text-align: center;
+}
+
+.container-reponse{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    padding: 0 2vw;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    border: solid 2px rgb(151, 151, 151);
+    border-radius: 20px;
+    overflow: hidden;
+    scrollbar-width: 3px;
+    scrollbar-color: grey;
+}
+.scrollcustom{
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+.scrollcustom::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.scrollcustom::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	background-color: #F5F5F5;
+}
+.scrollcustom::-webkit-scrollbar-thumb
+{
+
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.7);
+	background-color: #555;
+}
+.flex{
+    display: flex;
+    height: 90%;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.container-reponse a{
+    text-decoration: underline;
+    color: #e94663;
+}
+.container_btn{
+    display: flex;
+    height: 5vh;
+    width: 90%;
+    justify-content: flex-end;
+}
+.matiere_bachelor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.matiere_master{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.container_btn_matiere{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+}
+.container_btn_debouche{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    justify-content: center;
+}
+.listematiere{
+    display: none;
+    width: 80vw;
+    height: 65vh;
+    border-radius: 25px;
+}
+.txt_small{
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+    height: 40%;
+}
+.smallcont_answ{
+    justify-content: space-evenly;
+}
+.last_btn{
+    grid-column: 1 / span 2;
+    width: calc(90%/2);
+    justify-self: center;
+}
+.flex2{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+.btn_debouche{
+    display: flex;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    transition: all 120ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    border: solid 2px rgb(151, 151, 151);
+}
+.cont_debouch{
+    justify-content: space-around;
+}
+.btn_matiere{
+    display: flex;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    transition: all 120ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    border: solid 2px rgb(151, 151, 151);
+}
+.d_bache{
+    font-size: 25px;
+}
+.d_master{
+    font-size: 25px;
+}
+.btn{
+    display: flex;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    transition: all 120ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+    border: solid 2px rgb(151, 151, 151);
+}
+.btn_list{
+    display: flex;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    transition: all 120ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+    border: solid 2px rgb(151, 151, 151);
+}
+.btn_back_d{
+    display: flex;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    transition: all 120ms ease-in-out;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 25px;
+    border: solid 2px rgb(151, 151, 151);
+}
+
+.btn_orange:hover{
+    cursor: pointer;
+    background-color: #f7a813;
+    color: aliceblue;
+    border: solid 2px #f7a813;
+}
+.btn_bleu:hover{
+    cursor: pointer;
+    background-color: #43c0f0;
+    color: aliceblue;
+    border: solid 2px #43c0f0;
+}
+.btn_rose:hover{
+    cursor: pointer;
+    background-color: #e94663;
+    color: aliceblue;
+    border: solid 2px #e94663;
+}
+
+
+
+
+
+#orange{
+    background-color: #f7a813;
+}
+#bleu{
+    background-color: #43c0f0;
+}
+#rose{
+    background-color: #e94663;
+}
+body{
+    
+}
+.espace{
+    height: 1vh
+}
+.active{
+    display: flex;
+}
+
+
+    </style>
+
+    <script>
+        allquestion = document.getElementById("all_q");
+retour = document.querySelectorAll(".btn");
+retourlist = document.querySelectorAll(".btn_list");
+btn_back_d = document.querySelectorAll(".btn_back_d");
+debouche_back_btn = document.querySelectorAll(".d");
+question = document.querySelectorAll(".c");
+question1 = document.getElementById("q_1");
+question2 = document.getElementById("q_2");
+question3 = document.getElementById("q_3");
+question4 = document.getElementById("q_4");
+question5 = document.getElementById("q_5");
+question6 = document.getElementById("q_6");
+reponse1 = document.querySelector(".card0");
+reponse2 = document.querySelector(".card1");
+reponse3 = document.querySelector(".card2");
+reponse4 = document.querySelector(".card3");
+reponse5 = document.querySelector(".card4");
+reponse6 = document.querySelector(".card5");
+matiere1 = document.querySelector(".m_1");
+matiere2 = document.querySelector(".m_2");
+matiere3 = document.querySelector(".m_3");
+matiere4 = document.querySelector(".m_4");
+matiere5 = document.querySelector(".m_5");
+matiere6 = document.querySelector(".m_6");
+matiere7 = document.querySelector(".m_7");
+matiere8 = document.querySelector(".m_8");
+listematiere = document.querySelectorAll(".listematiere");
+listematiere1 = document.querySelector(".listematiere_1");
+listematiere2 = document.querySelector(".listematiere_2");
+listematiere3 = document.querySelector(".listematiere_3");
+listematiere4 = document.querySelector(".listematiere_4");
+listematiere5 = document.querySelector(".listematiere_5");
+listematiere6 = document.querySelector(".listematiere_6");
+listematiere7 = document.querySelector(".listematiere_7");
+listematiere8 = document.querySelector(".listematiere_8");
+btn_debouchebache = document.querySelector(".d_bache");
+btn_debouchmaster = document.querySelector(".d_master");
+debouchebache = document.querySelector(".debouche_bache");
+debouchemaster = document.querySelector(".debouche_master");
+
+
+for (let i = 0; i < retour.length; i++) {
+    retour[i].addEventListener("click", function() {
+        question.forEach((question) => {
+            question.classList.remove('active');
+          });
+        allquestion.classList.toggle("active");
+    });
+}
+for (let i = 0; i < btn_back_d.length; i++) {
+    btn_back_d[i].addEventListener("click", function() {
+        debouche_back_btn.forEach((debouche_back_btn) => {
+            debouche_back_btn.classList.remove('active');
+          });
+        reponse6.classList.toggle("active");
+    });
+}
+for (let i = 0; i < retourlist.length; i++) {
+    retourlist[i].addEventListener("click", function() {
+        listematiere.forEach((listematiere) => {
+            listematiere.classList.remove('active');
+          });
+        reponse5.classList.toggle("active");
+    });
+}
+console.dir(question);
+question1.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse1.classList.toggle("active");   
+});
+question2.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse2.classList.toggle("active");
+});
+question3.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse3.classList.toggle("active");
+});
+question4.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse4.classList.toggle("active");
+});
+question5.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+question6.addEventListener("click", function() { 
+    allquestion.classList.toggle("active");
+    reponse6.classList.toggle("active");
+});
+matiere1.addEventListener("click", function() { 
+    listematiere1.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere2.addEventListener("click", function() { 
+    listematiere2.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere3.addEventListener("click", function() { 
+    listematiere3.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere4.addEventListener("click", function() { 
+    listematiere4.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere5.addEventListener("click", function() { 
+    listematiere5.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere6.addEventListener("click", function() { 
+    listematiere6.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere7.addEventListener("click", function() { 
+    listematiere7.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+matiere8.addEventListener("click", function() { 
+    listematiere8.classList.toggle("active");
+    reponse5.classList.toggle("active");
+});
+btn_debouchebache.addEventListener("click", function() { 
+    debouchebache.classList.toggle("active");
+    reponse6.classList.toggle("active");
+});
+btn_debouchmaster.addEventListener("click", function() { 
+    debouchemaster.classList.toggle("active");
+    reponse6.classList.toggle("active");
+});
+
+
+
+/* retour.addEventListener("click", function() { 
+    question.forEach((question) => {
+        question.classList.remove('active');
+      });
+    allquestion.classList.toggle("active");
+});
+ */
+    </script>
 </head>
 <body>
     <div class="main-cont">
@@ -358,5 +908,5 @@
     </div>
 </body>
 <script src="https://play.workadventu.re/iframe_api.js"></script>
-<script src="./pnj_chat.js"></script>
+<!-- <script src="./pnj_chat.js"></script> -->
 </html>
