@@ -1941,7 +1941,17 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"src\/pnj_chat.html"
+                         "value":"pnj_chat.html"
+                        }, 
+                        {
+                         "name":"openWebsiteTrigger",
+                         "type":"string",
+                         "value":"onaction"
+                        }, 
+                        {
+                         "name":"openWebsiteTriggerMessage",
+                         "type":"string",
+                         "value":"Besoin d'informations concernant les formation ? Appuyer sur \"Espace\" interagire"
                         }],
                  "rotation":0,
                  "type":"area",
