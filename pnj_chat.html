@@ -43,6 +43,7 @@ font-family: "futura-pt", sans-serif;
 font-weight: 700;
 font-style: normal;
 font-size: 35px;
+text-align: center;
 height: 6%;
 display: flex;
 align-items: center;
@@ -60,8 +61,9 @@ justify-content: center;
     row-gap: 15px;
 }
 .question{
+    align-self: center;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     font-size: 20px;
     text-align: center;
     align-items: center;
@@ -80,6 +82,7 @@ justify-content: center;
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    min-height: 5vh;
     transition: all 200ms ease-in-out;
     background-color: white
 }
@@ -193,7 +196,7 @@ justify-content: center;
     scrollbar-color: grey;
 }
 .scrollcustom{
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
     height: 100%;
 }
@@ -217,7 +220,7 @@ justify-content: center;
 }
 .flex{
     display: flex;
-    height: 90%;
+    height: 100%;
     justify-content: space-evenly;
     flex-direction: column;
 }
@@ -271,7 +274,6 @@ justify-content: center;
     font-style: normal;
     font-size: 20px;
     color: rgb(83, 83, 83);
-    height: 40%;
 }
 .smallcont_answ{
     justify-content: space-evenly;
@@ -403,11 +405,8 @@ justify-content: center;
 #rose{
     background-color: #e94663;
 }
-body{
-    
-}
 .espace{
-    height: 1vh
+    height: 4vh
 }
 .active{
     display: flex;
@@ -426,14 +425,14 @@ body{
                     <div id="q_1" class="q-container">Quelles formations proposez-vous ?</div>
                 </div>
                 <div class="question" id="bleu">
-                    <div id="q_2" class="q-container">Est-ce que les diplômes sont reconnus par l'Etat ?</div>
+                    <div id="q_2" class="q-container">Est-ce que les titres sont reconnus par l'Etat ?</div>
                 </div>
                 <div class="question" id="rose">
                     <div id="q_3" class="q-container">Quelles sont les modalités d'inscription ?</div>
                 </div>
                 <div class="question" id="orange">
                     <div id="q_4" class="q-container">Est-ce que les formations sont payantes ?</div>
-                </div>
+                </div>espace
                 <div class="question" id="bleu">
                     <div id="q_5" class="q-container">Quelles sont les matières enseignées ?</div>
                 </div>
@@ -444,13 +443,17 @@ body{
         </div>
         <div class="c card0" id="orange">
             <div class="question1">
+                <div class="espace"></div>
                 <h1>Quelles formations proposez-vous ?</h1>
                 <div class="espace"></div>
                 <div class="container-reponse">
-                    Nous proposons 2 formations :  
-                    <div class="espace"></div>
-                    <div>- Le Bachelor Designer Numérique, de niveau Bac+3 qui vise à former les futurs acteurs de l'innovation numérique.</div> 
-                    <div>- Le Mastère Manager de Projet Numérique, de niveau Bac+5 qui forme les futurs managers de la transformation numérique des entreprises.</div> 
+                    <div class="scrollcustom">
+                        Nous proposons 2 formations :  
+                        <div class="espace"></div>
+                        <div>- Le Bachelor Designer Numérique, de niveau Bac+3 qui vise à former les futurs acteurs de l'innovation numérique.</div> 
+                        <div class="espace"></div>
+                        <div>- Le Mastère Manager de Projet Numérique, de niveau Bac+5 qui forme les futurs managers de la transformation numérique des entreprises.</div> 
+                    </div>
                 </div>
                 <div class="container_btn">
                     <div class="btn btn_orange">Retour</div>
@@ -460,10 +463,10 @@ body{
         <div class="c card1" id="bleu">
             <div class="question1 sma">
                 <div class="espace"></div>
-                <h1>Est-ce que les diplômes sont reconnus par l'Etat ?</h1>
+                <h1>Est-ce que les titres sont reconnus par l'Etat ?</h1>
                 <div class="espace"></div>
                 <div class="container-reponse smallcont_answ">
-                    <div>Oui, les diplômes sont reconnus par l'Etat.</div> 
+                    <div>Oui, les titres sont reconnus par l'Etat.</div> 
                     <div>Le Bachelor est un titre RNCP de niveau 6 et le Mastère un titre RNCP de niveau 7. </div> 
                 </div>
                 <div class="container_btn">
@@ -473,7 +476,9 @@ body{
         </div>
         <div class="c card2" id="rose">
             <div class="question2">
+                <div class="espace"></div>
                 <h1>Quelles sont les modalités <br> d'inscription ?</h1>
+                <div class="espace"></div>
                 <div class="container-reponse smallcont_answ">
                     Pour le Bachelor :  
                     <div>Retrouver toutes les informations ainsi qu'un formulaire très simple à remplir <a href="https://esadd.fr/inscription-bachelor-designer-numerique/ " rel="noreferrer noopener" target="_blank">sur ce lien.</a>  </div> 
@@ -488,11 +493,15 @@ body{
         </div>
         <div class="c card3" id="orange">
             <div class="question3">
+                <div class="espace"></div>
                 <h1>Est-ce que les formations sont payantes ?</h1>
+                <div class="espace"></div>
                 <div class="container-reponse smallcont_answ">
-                    <div>Pour le Bachelor, des frais de scolarité sont à prévoir pour les deux premières années. La troisième année se fait en apprentissage, donc votre salaire et les frais de scolarité sont pris en charge par l'entreprise qui vous accueillera. </div> 
-                    <div class="espace"></div>
-                    <div>Pour le Mastère, la scolarité reste entièrement financée par l'entreprise qui vous accueille en apprentissage. C'est également elle qui vous verse votre rémunération. </div> 
+                    <div class="scrollcustom">
+                        <div>Pour le Bachelor, des frais de scolarité sont à prévoir pour les deux premières années. La troisième année se fait en apprentissage, donc votre salaire et les frais de scolarité sont pris en charge par l'entreprise qui vous accueillera. </div> 
+                        <div class="espace"></div>
+                        <div>Pour le Mastère, la scolarité reste entièrement financée par l'entreprise qui vous accueille en apprentissage. C'est également elle qui vous verse votre rémunération. </div> 
+                    </div>      
                 </div>
                 <div class="container_btn">
                     <div class="btn btn_orange">Retour</div>
@@ -501,11 +510,14 @@ body{
         </div>
         <div class="c card4" id="bleu">
             <div class="question3">
+                <div class="espace"></div>
                 <h1>Quelles sont les matières enseignées ?</h1>
+                <div class="espace"></div>
                 <div class="container-reponse">
                     <div class="scrollcustom"><!-- <div class="espace"></div> -->
                         <div class="flex">
                             <div>En Bachelor, les matières tournent autour de 5 pôles :</div> 
+                            <div class="espace"></div>
                             <div class="matiere_bachelor">
                                 <div class="container_btn_matiere">
                                     <div class="m_1 btn_matiere btn_bleu">Art et graphisme</div>
@@ -527,6 +539,7 @@ body{
                         <div class="flex txt_small"> Ces matières vous permetterons de validé 4 blocs de compétences composant le diplôme (Analyse et positionnement d'un projet numérique, Conception d'un projet numérique, Réalisation d'un projet numérique, Finalisation et valorisation d'un projet numérique).</div>
                         <div class="flex">    
                             <div>En Mastère, les matières tournent autour de 3 blocs :</div> 
+                            <div class="espace"></div>
                             <div class="matiere_master">
                                 <div class="container_btn_matiere">
                                     <div class="m_6 btn_matiere btn_bleu">Elaboration d'une stratégie de communication numérique</div>
@@ -549,13 +562,15 @@ body{
         </div>
         <div class="c card5" id="rose">
             <div class="question3">
+                <div class="espace"></div>
                 <h1>Quels sont les débouchés professionnels ?</h1>
+                <div class="espace"></div>
                 <div class="container-reponse cont_debouch">
                     <div class="container_btn_debouche">
                         <div class="d_bache btn_debouche btn_rose">Bachelor</div>
                     </div>
                     <div class="container_btn_debouche">
-                        <div class="d_master btn_debouche btn_rose">Mastere</div>
+                        <div class="d_master btn_debouche btn_rose">Mastère</div>
                     </div>
                 </div>
                 <div class="container_btn">
@@ -739,7 +754,7 @@ body{
         </div>
         <div class="c d debouche_master listematiere" id="rose">
             <div class="question3">
-                <h1>Deboucher Mastere</h1>
+                <h1>Deboucher Mastère</h1>
                 <div class="container-reponse">
                     <div class="scrollcustom">
                         <div class="flex2">
